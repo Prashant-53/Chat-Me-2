@@ -9,6 +9,7 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./backend/.env" });
 import jwt from "jsonwebtoken";
 
+const PORT = process.env.PORT || 5000;
 
 connectDB();
 const app = express();
@@ -116,6 +117,6 @@ io.on("connection", (socket) => {
 })
 
 
-server.listen(5000, () => {
+server.listen(PORT, () => {
     console.log("Server running on port 5000")
 })
