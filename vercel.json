@@ -2,8 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "./index.html",
-      "rootDirectory": "frontend"
+      "dest": "./index.html"
     }
   ]
 
