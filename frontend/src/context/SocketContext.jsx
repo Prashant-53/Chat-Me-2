@@ -11,7 +11,7 @@ export const SocketProvider = ({children}) => {
 
         if(!token) return;
 
-        const newSocket = io("http://localhost:5000", {
+        const newSocket = io("https://chat-me-2-1.onrender.com", {
             auth: {token}
         });
 
