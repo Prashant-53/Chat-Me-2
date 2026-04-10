@@ -6,7 +6,9 @@ export const createSocket = () => {
     const token = localStorage.getItem("token");
 
     socket = io("https://chat-me-2-1.onrender.com", {
-        auth: { token }
+        auth: { token },
+        transports: ["websocket"] // 🔥 important for Render
+
     });
 
     return socket;
