@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "server": "nodemon backend/server.js",
-    "start": "node server.js"
+    "start": "node backend/server.js"
 
   },
   "dependencies": {
