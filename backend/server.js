@@ -26,7 +26,6 @@ const io = new Server(server, {
     cors: {
         origin: "https://chat-me-2-zymj.vercel.app",
         methods: ["GET", "POST", "PUT", "DELETE"],
-        credentials: true
 
     },
 })
