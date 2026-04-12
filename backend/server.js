@@ -16,7 +16,10 @@ const app = express();
 app.use(cors({
     origin: "https://chat-me-2-zymj.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
-})); app.use(express.json());
+}));
+app.options("*", cors());
+
+app.use(express.json());
 app.use("/api/auth", authRoutes);
 
 const users = [];
