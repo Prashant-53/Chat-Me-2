@@ -13,10 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 const app = express();
-app.use(cors({
-    origin: "https://chat-me-2-zymj.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-}));
+app.use(cors());
 
 
 app.use(express.json());
